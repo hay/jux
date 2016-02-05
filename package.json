@@ -1,0 +1,24 @@
+{
+  "name": "jux",
+  "version": "0.1.0",
+  "description": "YAML / Markdown format to write structured narratives",
+  "license": "MIT",
+  "repository": "hay/jux",
+  "author": {
+    "name": "Hay Kranen",
+    "email": "huskyr@gmail.com",
+    "url": "haykranen.nl"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "yaml",
+    "markdown",
+    "narratives"
+  ],
+  "dependencies": {}
+}
