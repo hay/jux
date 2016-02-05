@@ -10,7 +10,7 @@ function parse(text) {
     var first = true;
 
     text.split('\n').forEach((line) => {
-        if (line.trim().includes(BLOCK_SEPERATOR)) {
+        if (line.trim() === BLOCK_SEPERATOR) {
             if (TAG_OPEN) {
                 block.meta = yaml.safeLoad(lines.join('\n'));
                 lines = [];
@@ -31,6 +31,10 @@ function parse(text) {
             lines.push(line);
         }
     });
+
+    // Last block
+    block.content = marked(lines.join('\n'));
+    blocks.push(block);
 
     return blocks;
 }

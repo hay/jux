@@ -10,10 +10,12 @@ $ npm install --save jux
 ## Usage
 
 ```js
-const jux = require('jux');
+var jux = require('jux');
 
 jux.parse('...');
 ```
+
+Check out the `example.md` and `example.js` files for some guidance.
 
 ## API
 
