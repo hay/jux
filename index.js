@@ -3,7 +3,7 @@ var marked = require('marked');
 
 const BLOCK_SEPERATOR = '---';
 
-function parse(text) {
+function parseText(text) {
     var block, lines;
     var blocks = [];
     var TAG_OPEN = false;
@@ -41,6 +41,15 @@ function parse(text) {
     blocks.push(block);
 
     return blocks;
+}
+
+function parse(text) {
+    var blocks = parseText(text);
+
+    return {
+        header : blocks.shift().meta,
+        blocks : blocks
+    };
 }
 
 module.exports = {

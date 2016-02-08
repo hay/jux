@@ -3,6 +3,14 @@ before
 the first ---
 will be ignored!
 ---
+header: A general header
+author:
+    code: Jane
+    design: Joe
+---
+Everything in the very first block will be metadata for the complete document
+
+---
 # Everything between the two --- lines can be valid YAML and will be
 # available in a 'meta' property
 title: Title can go here
