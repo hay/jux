@@ -28,7 +28,11 @@ function parse(text) {
 
             TAG_OPEN = !TAG_OPEN;
         } else {
-            lines.push(line);
+            if (!first) {
+                lines.push(line);
+            } else {
+                // Pass: ignore everything before the first ---
+            }
         }
     });
 

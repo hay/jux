@@ -1,3 +1,7 @@
+everything
+before
+the first ---
+will be ignored!
 ---
 # Everything between the two --- lines can be valid YAML and will be
 # available in a 'meta' property

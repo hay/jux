@@ -1,6 +1,6 @@
 {
   "name": "jux",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "YAML / Markdown format to write structured narratives",
   "license": "MIT",
   "repository": "hay/jux",
